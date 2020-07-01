@@ -16,7 +16,8 @@ spec:
       labels:
         app: prometheus
     spec:
-      nodeName: master
+      nodeSelctor:
+        node-role.kubernetes.io/master: ""
       containers:
       - name: prometheus
         image: prom/prometheus

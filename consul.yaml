@@ -15,7 +15,8 @@ spec:
       labels:
         app: consul
     spec:
-      nodeName: master
+      nodeSelctor:
+        node-role.kubernetes.io/master: ""
       containers:
       - name: consul
         image: consul

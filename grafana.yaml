@@ -15,7 +15,8 @@ spec:
         task: monitoring
         k8s-app: grafana
     spec:
-      nodeName: master
+      nodeSelctor:
+        node-role.kubernetes.io/master: ""
       containers:
       - name: grafana
         image: grafana/grafana:7.0.0-ubuntu
