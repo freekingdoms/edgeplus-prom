@@ -22,7 +22,7 @@ spec:
       - effect: NoSchedule
         key: node-role.kubernetes.io/master
       containers:
-      - image: prom/node-exporter
+      - image: prom/node-exporter@sha256:8a3a33cad0bd33650ba7287a7ec94327d8e47ddf7845c569c80b5c4b20d49d36
         name: prometheus-node-exporter
         ports:
         - name: prom-node-exp
