@@ -20,7 +20,7 @@ spec:
         node-role.kubernetes.io/master: ""
       containers:
       - name: prometheus
-        image: prom/prometheus@sha256:bfad037f95e5e34d595502aa02cac6467b7eadc4b08a601d150844003051fb1b
+        image: prom/prometheus
         imagePullPolicy: IfNotPresent
         command:
           - prometheus
